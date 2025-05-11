@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>Box Moveing</title>
+</head>
+<body onload="move()">
+    <center>
+        <h1>Seshadripuram Degree College .Mysore</h1>
+        <hr>
+    </center>
+    <div id="box"></div>
+</body>
+<script>
+    function move()
+    {
+        box = document.getElementById('box');
+        box.style.transform="translate(400px,50px)";
+        box.style.width="400px";
+        box.style.height="200px";
+    }
+    </script>
+    <style>
+    div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+    }
+    </style>
+</html>
