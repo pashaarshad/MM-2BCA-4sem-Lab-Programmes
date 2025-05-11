@@ -1,13 +1,6 @@
-<!-- 3 .write a HTML program to create student registration form on submitting the form
-check whether fields are empty or not using Javascript. If any fields are empty display
-an error message. -->
-
-
-
 <!DOCTYPE html>
 <html >
 <head>
-  
     <title>Student Registration Form</title>
 </head>
 <body>
@@ -18,42 +11,29 @@ an error message. -->
         <label for="name">Name</label>
         <input type="text" id="name" placeholder="Enter your name" >
         <br><br>
-
         <label for="gender">Gender :</label>
         <input type="radio" id="g1" value="Male"> Male
         <input type="radio" id="g2" value="Female"> Female
         <br><br>
-
         <label for="address">address</label>
         <textarea name="address" id="address" placeholder="Enter Your Address"></textarea>
-
         <br><br>
-
-
         <label for="dob">DOB :</label>
         <input type="date" id="dob" placeholder="Enter your DOB" >
-
         <br><br>
-
         <label for="religion">Religion :</label>
         <input type="radio" id="r1" value="Hindu"> Hindu
         <input type="radio" id="r2" value="Muslim"> Muslim
         <input type="radio" id="r3" value="Christian"> Christian
-
         <br><br>
         <label for="number"> Phone Number</label>
         <input type="text" id="number" placeholder="Enter your number" >
-
         <br><br>
-
         <label for="email">Email</label>
         <input type="email" id="email" placeholder="Enter your email" >
-
         <br><br>
-
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
-
     </form>
 </body>
 <script>
@@ -72,12 +52,10 @@ an error message. -->
         if(name == ""){
             alert("Please enter your name");
         }
-
         if(!g1 || !g2){
             alert("Please select your gender.");
             return false;
         }
-
         if(address == ""){
             alert("Please enter your address");
         }
@@ -93,10 +71,7 @@ an error message. -->
         if(email == ""){
             alert("Please enter your email");
         }
-
         alert("Form submitted successfully!");
-        
     }
-
 </script>
 </html>
