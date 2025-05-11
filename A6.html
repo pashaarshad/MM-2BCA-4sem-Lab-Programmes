@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+    <style>
+        #box {
+        width: 100px;
+        height: 100px;
+        background: rgb(4, 191, 248);
+        transition: width 3s, height 3s, transform 3s;
+        }
+    </style>
     <title>Box Moveing</title>
 </head>
 <body onload="move()">
@@ -15,17 +22,9 @@
     function move()
     {
         box = document.getElementById('box');
-        box.style.transform="translate(400px,50px)";
+        box.style.transform="translate(500px,50px)";
         box.style.width="400px";
         box.style.height="200px";
     }
     </script>
-    <style>
-    div {
-    width: 100px;
-    height: 100px;
-    background: red;
-    transition: width 2s, height 2s, transform 2s;
-    }
-    </style>
 </html>
